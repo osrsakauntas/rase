@@ -1,0 +1,109 @@
+database:
+  file: races.db
+
+messages:
+  prefix: '&8[&bRases&8] &r'
+  race-not-found: '&cTokios rases nėra.'
+  already-in-race: '&eŽaidėjas jau priklauso rasei &f%race%&e.'
+  assigned: '&aŽaidėjui &f%player% &apaskirta rasė &f%race%&a.'
+  joined: '&aTau paskirta rasė &f%race%&a.'
+  left: '&aŽaidėjui nuimta rasė.'
+  not-in-race: '&eŽaidėjas neturi priskirtos rasės.'
+  no-permission: '&cNeturi teisės naudoti šios komandos.'
+  border-changed: '&aRasės &f%race% &aborderio dydis pakeistas į &f%size%&a.'
+  race-created: '&aSukurta nauja rasės zona &f%race% &a(dydis: &f%size%&a).'
+  outside-border: '&cUž rasės teritorijos ribų šio bloko statyti negalima.'
+  left-border-title: '&cIŠĖJAI IŠ TERITORIJOS'
+  left-border-subtitle: '&ePalikai teritoriją: &f%race%&e. Už ribų galima statyti tik žemę ir akmenį.'
+  entered-border-title: '&aĮĖJAI Į TERITORIJĄ'
+  entered-border-subtitle: '&fĮėjai į teritoriją: &e%race%&f.'
+  reloaded: '&aRasių konfigūracija perkrauta.'
+  race-deleted: '&aRasė &f%race% &aištrinta.'
+  reputation-gained: '&aRasė &f%race% &agavo &f+%amount% &areputacijos. Iš viso: &f%reputation%&a.'
+  phase-unlocked: '&6Rasė &f%race% &6atrakino fazę &f%phase%&6!'
+  wrong-race-cauldron: '&cŠis rasės katilas priklauso rasei &f%race%&c.'
+  cauldron-protected: '&cŠios rasės katilo išgriauti negalima.'
+  cauldron-help: '&eAukojimui laikyk reikiamą item rankoje ir dešiniuoju pelės mygtuku spausk katilą arba numesk itemą šalia katilo.'
+  invalid-offering: '&cŠis item nėra paskirtas kaip auka.'
+  not-enough-offering: '&cReikia &f%amount%x %item%&c.'
+  offering-progress: '&aPriimta &f%item%&a: &f%deposited%/%amount%&a.'
+  offering-already-complete: '&eŠis reikalavimas jau įvykdytas: &f%item%&e.'
+  offerings-complete: '&6Visi rasės katilo itemai surinkti! Rasė gavo &f+%reputation% &6reputacijos.'
+  offering-requirements-updated: '&aRasės &f%race% &akatilo aukoms reikia surinkti: %items%&a.'
+  upgrade-locked: '&cŠioje fazėje upgrade dar nepasiekiamas: &f%phase%&c.'
+  upgrade-invalid: '&cLaikomas item nėra tinkamas upgrade.'
+  item-upgraded: '&aItem atnaujintas pagal rasės &f%phase% &afazę.'
+  item-locked: '&cŠis item (&f%item%&c) atrakinamas tik pasiekus &f%phase%&c rasės lygį.'
+
+progression:
+  phases:
+    STONE:
+      reputation: 0
+    COPPER:
+      reputation: 10000
+    IRON:
+      reputation: 30000
+    DIAMOND:
+      reputation: 75000
+    NETHERITE:
+      reputation: 150000
+  upgrades:
+    STONE:
+      material: STONE
+    COPPER:
+      material: IRON
+    IRON:
+      material: DIAMOND
+    DIAMOND:
+      material: NETHERITE
+    NETHERITE:
+      material: NETHERITE
+
+races:
+  skyborn:
+    display-name: '&bSkyborn'
+    prefix-color: '&b'
+    world: world
+    shape: square
+    center:
+      x: 0
+      z: 0
+    border-size: 64
+    spawn:
+      x: 0.5
+      y: 100
+      z: 0.5
+      yaw: 0
+      pitch: 0
+
+  ironclad:
+    display-name: '&7Ironclad'
+    prefix-color: '&7'
+    world: world
+    shape: square
+    center:
+      x: 1000
+      z: 0
+    border-size: 64
+    spawn:
+      x: 1000.5
+      y: 100
+      z: 0.5
+      yaw: 90
+      pitch: 0
+
+  shadowveil:
+    display-name: '&5Shadowveil'
+    prefix-color: '&5'
+    world: world
+    shape: circle
+    center:
+      x: -1000
+      z: 0
+    border-size: 64
+    spawn:
+      x: -999.5
+      y: 100
+      z: 0.5
+      yaw: -90
+      pitch: 0

@@ -1,0 +1,16 @@
+name: RaceBorderProgression
+version: 1.0.0
+main: com.kodari.raceborder.RaceBorderPlugin
+api-version: '1.20'
+author: Kodari
+depend: [LuckPerms]
+softdepend: [TAB, Professions]
+commands:
+  rase:
+    description: Assign and manage player races
+    usage: /rase <paskirti|nuimti|border|sukurti|istrinti|tp|pakeltilygi|nuleistilygi|reputacija|katilas|auka|info|upgrade|reload>
+    aliases: [race, rases]
+permissions:
+  raceborder.admin:
+    description: Assign races and change race borders
+    default: op
